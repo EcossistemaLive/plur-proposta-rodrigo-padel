@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -264,11 +264,11 @@
   }
 
   /* ---------- animated wave dividers (transições em ondas) ---------- */
-  .wavesep{position:relative;height:92px;overflow:hidden;line-height:0;margin-bottom:-1px}
-  .wavesep svg{position:absolute;left:0;bottom:-1px;height:92px;width:220%}
-  .wavesep .lay1{animation:waveslide 17s linear infinite}
-  .wavesep .lay2{animation:waveslide 11s linear infinite;opacity:.5}
-  @keyframes waveslide{to{transform:translateX(-50%)}}
+  .courtsep{position:relative;height:92px;overflow:hidden;line-height:0;margin-bottom:-1px}
+  .courtsep svg{position:absolute;left:0;bottom:-1px;height:92px;width:220%}
+  .courtsep .lay1{animation:courtslide 17s linear infinite}
+  .courtsep .lay2{animation:courtslide 11s linear infinite;opacity:.5}
+  @keyframes courtslide{to{transform:translateX(-50%)}}
 
   @media(max-width:900px){
     .fan{width:220px;height:220px;top:-16px;right:-14px}
@@ -411,9 +411,9 @@
 </section>
 
 <!-- transição em ondas -->
-<div class="wavesep" aria-hidden="true">
-  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#241c52"/></svg>
-  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#151138"/></svg>
+<div class="courtsep" aria-hidden="true">
+  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#241c52"/></svg>
+  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#151138"/></svg>
 </div>
 
 <!-- ===== INSIGHT ===== -->
@@ -570,9 +570,9 @@
 </section>
 
 <!-- transição em ondas -->
-<div class="wavesep" aria-hidden="true">
-  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#33313e"/></svg>
-  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#1c1b22"/></svg>
+<div class="courtsep" aria-hidden="true">
+  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#33313e"/></svg>
+  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#1c1b22"/></svg>
 </div>
 
 <!-- ===== MODELS ===== -->
@@ -593,9 +593,9 @@
     <p class="note reveal">Sobre estrutura e investimento, estamos abertos. A conversa que nos interessa não é sobre metro quadrado — é sobre entregar o melhor suporte físico para que a Kaza Padel seja a principal referência esportiva.</p>
   </div>
   <!-- transição em ondas: escuro -> azul do fechamento -->
-  <div class="wavesep" aria-hidden="true">
-    <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#3b78c8"/></svg>
-    <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 C60,16 120,16 180,46 C240,76 300,76 360,46 C420,16 480,16 540,46 C600,76 660,76 720,46 C780,16 840,16 900,46 C960,76 1020,76 1080,46 C1140,16 1200,16 1260,46 C1320,76 1380,76 1440,46 L1440,92 L0,92 Z" fill="#bd8e5e"/></svg>
+  <div class="courtsep" aria-hidden="true">
+    <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#3b78c8"/></svg>
+    <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#bd8e5e"/></svg>
   </div>
 </section>
 
