@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,41 +6,42 @@
 <title>Viva — Proposta de parceria</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#fff;
-    --ink:#1c2421;
-    --slate:#43504c;
-    --mist:#71807a;
-    --line:#e2e8e4;
-    --paper-2:#f8f5ee;
+    --paper:#f7f5ef;
+    --ink:#16231f;
+    --slate:#145350;
+    --mist:#43504c;
+    --line:#e6decf;
+    --paper-2:#f6f3ec;
     
-    --green:#21544a;
-    --teal:#587a70;
-    --blue:#bd8e5e;
-    --violet:#a67345;
+    --green:#0c2422;
+    --teal:#145350;
+    --blue:#ad7a42;
+    --violet:#8f5f2c;
     
-    --grad:linear-gradient(135deg, var(--green), var(--blue));
-    --grad-soft:linear-gradient(120deg,rgba(33,84,74,.08),rgba(88,122,112,.08),rgba(189,142,94,.08));
-    --shadow:0 24px 60px -28px rgba(33,84,74,.25);
+    --grad:linear-gradient(135deg, var(--green), var(--teal));
+    --grad-soft:linear-gradient(120deg,rgba(12,36,34,.08),rgba(20,83,80,.08),rgba(173,122,66,.08));
+    --shadow:0 24px 60px -28px rgba(12,36,34,.25);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:'Poppins',system-ui,sans-serif;
     color:var(--ink);
     background:var(--paper);
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-  h1,h2,h3,h4,.font-display{font-family:'Sora',sans-serif;letter-spacing:-.02em}
+  h1,h2,h3,h4,.font-display{font-family:'Poppins',sans-serif;letter-spacing:-.02em}
+  .accent { font-family: 'Playfair Display', serif; font-style: italic; font-weight: normal; }
   .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
   .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .kicker{
-    font-family:'Sora',sans-serif;font-weight:600;font-size:.74rem;
-    letter-spacing:.28em;text-transform:uppercase;color:var(--teal);
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:.74rem;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--blue);
   }
 
   /* ---------- reveal ---------- */
@@ -157,7 +158,7 @@
   .tech .feat p{font-size:.92rem;color:var(--slate)}
   .device{
     border-radius:26px;padding:30px;color:#fff;position:relative;overflow:hidden;
-    background:radial-gradient(130% 130% at 20% 10%,#bd8e5e,#21544a 55%,#a67345);
+    background:radial-gradient(130% 130% at 20% 10%,#ad7a42,#0c2422 55%,#8f5f2c);
     box-shadow:var(--shadow);
   }
   .device .badge{font-family:'Sora',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8)}
@@ -173,7 +174,7 @@
     background:linear-gradient(160deg,#2a1f52,#12325e);border:1px solid rgba(255,255,255,.14);
     box-shadow:var(--shadow)}
   .phone .screen{border-radius:32px;overflow:hidden;color:#fff;padding:16px 16px 20px;
-    background:radial-gradient(130% 120% at 15% 0%,#bd8e5e,#21544a 58%,#a67345)}
+    background:radial-gradient(130% 120% at 15% 0%,#ad7a42,#0c2422 58%,#8f5f2c)}
   .phone .notch{width:104px;height:6px;border-radius:6px;background:rgba(255,255,255,.4);margin:2px auto 16px}
   .phone .ph-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
   .phone .ph-top b{font-family:'Sora',sans-serif;font-size:.94rem;font-weight:600}
@@ -214,7 +215,7 @@
 
   /* closing */
   .closing{text-align:center;color:#fff;overflow:hidden;
-    background:radial-gradient(120% 120% at 50% -10%,#bd8e5e 0%,#21544a 45%,#5e35a8 100%)}
+    background:radial-gradient(120% 120% at 50% -10%,#ad7a42 0%,#0c2422 45%,#5e35a8 100%)}
   .closing .tone{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:40px}
   .closing .tone span{font-family:'Sora',sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 18px;border:1px solid rgba(255,255,255,.28);border-radius:100px}
   .closing .final{font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(1.5rem,3.2vw,2.4rem);line-height:1.34;max-width:22ch;margin:0 auto}
@@ -295,14 +296,14 @@
       <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
         <defs>
           <linearGradient id="vm" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0%" stop-color="#21544a"/><stop offset="40%" stop-color="#587a70"/><stop offset="72%" stop-color="#bd8e5e"/><stop offset="100%" stop-color="#a67345"/>
+            <stop offset="0%" stop-color="#0c2422"/><stop offset="40%" stop-color="#145350"/><stop offset="72%" stop-color="#ad7a42"/><stop offset="100%" stop-color="#8f5f2c"/>
           </linearGradient>
         </defs>
         <g fill="none" stroke="url(#vm)" stroke-linecap="round">
           <path d="M10 62 Q30 34 50 54 T90 40" stroke-width="9"/>
           <path d="M14 80 Q32 58 50 72 T88 60" stroke-width="7" opacity=".5"/>
         </g>
-        <circle cx="90" cy="40" r="6" fill="#21544a"/>
+        <circle cx="90" cy="40" r="6" fill="#0c2422"/>
       </svg>
       <div>
         <span class="name">Viva</span>
@@ -335,7 +336,7 @@
   </div>
 
   <div class="wrap">
-    <div class="kicker reveal"><span class="dot" style="background:#21544a"></span><span style="color:var(--mist)">Para</span> Kaza Padel</div>
+    <div class="kicker reveal"><span class="dot" style="background:#0c2422"></span><span style="color:var(--mist)">Para</span> Kaza Padel</div>
     <img class="reveal" src="kaza_logo.png" alt="Kaza Padel" style="margin-top:24px; margin-bottom: 32px; border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
     <br>
     <span class="eyebrow reveal"><span class="dot"></span> Proposta de parceria · Movimento &amp; Recovery</span>
@@ -412,8 +413,8 @@
 
 <!-- transição em ondas -->
 <div class="courtsep" aria-hidden="true">
-  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#241c52"/></svg>
-  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#151138"/></svg>
+  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#145350"/></svg>
+  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#0c2422"/></svg>
 </div>
 
 <!-- ===== INSIGHT ===== -->
@@ -516,9 +517,9 @@
         <h2 class="lead-h" style="margin-top:16px">A experiência parece simples. Por dentro, é pura tecnologia.</h2>
         <p class="muted" style="margin-top:16px">Já usamos inteligência artificial nos nossos eventos — para acabar com filas e elevar a experiência de clientes e atletas. Aqui, a mesma inteligência fecha <b>todo o ecossistema do empreendimento</b>: cada ganho de mobilidade, cada primeira onda e cada manobra nova vira dado, jogo e recorrência.</p>
         <div class="feat">
-          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#bd8e5e" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke-linecap="round"/></svg></div><div><h4>IA que já roda nos nossos eventos</h4><p>Sem fila, com fluxo inteligente e experiência fluida — a tecnologia que aplicamos em campeonatos, agora dentro do empreendimento.</p></div></div>
-          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#587a70" stroke-width="1.7"><path d="M4 20l4-9 3 4 3-7 6 12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="11" r="1.3" fill="#587a70"/></svg></div><div><h4>Jornada gamificada de ponta a ponta</h4><p>Ganho de mobilidade e flexibilidade, a primeira onda em pé, as manobras que já executa, quem indicou e trouxe — tudo vira conquista, pontos e motivo para voltar.</p></div></div>
-          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#a67345" stroke-width="1.7"><rect x="9" y="6" width="6" height="12" rx="3"/><path d="M9 3.5h6M9 20.5h6" stroke-linecap="round"/></svg></div><div><h4>Sincronizado com wearables</h4><p>Relógios, anéis e gadgets: tempo de água, ondas pegas no dia e evolução conectados automaticamente ao perfil de cada cliente.</p></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ad7a42" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke-linecap="round"/></svg></div><div><h4>IA que já roda nos nossos eventos</h4><p>Sem fila, com fluxo inteligente e experiência fluida — a tecnologia que aplicamos em campeonatos, agora dentro do empreendimento.</p></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#145350" stroke-width="1.7"><path d="M4 20l4-9 3 4 3-7 6 12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="11" r="1.3" fill="#145350"/></svg></div><div><h4>Jornada gamificada de ponta a ponta</h4><p>Ganho de mobilidade e flexibilidade, a primeira onda em pé, as manobras que já executa, quem indicou e trouxe — tudo vira conquista, pontos e motivo para voltar.</p></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#8f5f2c" stroke-width="1.7"><rect x="9" y="6" width="6" height="12" rx="3"/><path d="M9 3.5h6M9 20.5h6" stroke-linecap="round"/></svg></div><div><h4>Sincronizado com wearables</h4><p>Relógios, anéis e gadgets: tempo de água, ondas pegas no dia e evolução conectados automaticamente ao perfil de cada cliente.</p></div></div>
           <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#8ea63f" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></div><div><h4>Um ecossistema, um só lugar</h4><p>Integração com Strava e Instagram/Reels, histórico e resultados sintetizados num único app. Se ainda não pensaram nisso, nós entregamos.</p></div></div>
         </div>
       </div>
@@ -559,11 +560,11 @@
       <h2 class="lead-h" style="margin-top:16px">Cuidado que vira percepção de valor — e percepção de valor que vira marca.</h2>
     </div>
     <div class="bens">
-      <div class="ben reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#bd8e5e" stroke-width="1.7"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></div><h4>Experiência premium reforçada</h4><p>Cada detalhe cuidado eleva a percepção de um empreendimento que já nasce sofisticado.</p></div>
-      <div class="ben reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#587a70" stroke-width="1.7"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21l-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div><h4>Mais segurança e confiança</h4><p>Praticantes amparados desde a estreia — menos incidentes, menos experiências ruíns.</p></div>
-      <div class="ben reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#a67345" stroke-width="1.7"><path d="M3 12a9 9 0 1018 0 9 9 0 10-18 0z"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" /></svg></div><h4>Recorrência que sustenta o negócio</h4><p>Quem se sente cuidado e evolui, volta. A camada de cuidado é uma máquina de retenção.</p></div>
-      <div class="ben reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#21544a" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 14l3-3 2 2 3-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Autoridade técnica agregada</h4><p>Um nome com credibilidade real na cena esportiva compõe a reputação do projeto.</p></div>
-      <div class="ben reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#587a70" stroke-width="1.7"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0111 0" stroke-linecap="round"/><path d="M16 6a3 3 0 010 6M21 19a5 5 0 00-4-4.9" stroke-linecap="round"/></svg></div><h4>Pertencimento e comunidade</h4><p>Cultura de acolhimento que evita panelas e faz cada visitante se sentir parte.</p></div>
+      <div class="ben reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#ad7a42" stroke-width="1.7"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></div><h4>Experiência premium reforçada</h4><p>Cada detalhe cuidado eleva a percepção de um empreendimento que já nasce sofisticado.</p></div>
+      <div class="ben reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#145350" stroke-width="1.7"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21l-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div><h4>Mais segurança e confiança</h4><p>Praticantes amparados desde a estreia — menos incidentes, menos experiências ruíns.</p></div>
+      <div class="ben reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#8f5f2c" stroke-width="1.7"><path d="M3 12a9 9 0 1018 0 9 9 0 10-18 0z"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" /></svg></div><h4>Recorrência que sustenta o negócio</h4><p>Quem se sente cuidado e evolui, volta. A camada de cuidado é uma máquina de retenção.</p></div>
+      <div class="ben reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#0c2422" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 14l3-3 2 2 3-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Autoridade técnica agregada</h4><p>Um nome com credibilidade real na cena esportiva compõe a reputação do projeto.</p></div>
+      <div class="ben reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#145350" stroke-width="1.7"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0111 0" stroke-linecap="round"/><path d="M16 6a3 3 0 010 6M21 19a5 5 0 00-4-4.9" stroke-linecap="round"/></svg></div><h4>Pertencimento e comunidade</h4><p>Cultura de acolhimento que evita panelas e faz cada visitante se sentir parte.</p></div>
       <div class="ben reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#8ea63f" stroke-width="1.7"><path d="M4 18V6a2 2 0 012-2h9l5 5v9a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 12h8M8 15h5" stroke-linecap="round"/></svg></div><h4>Conteúdo e educação de marca</h4><p>Saúde e movimento viram narrativa, evento e diferencial — não custo operacional.</p></div>
     </div>
   </div>
@@ -571,8 +572,8 @@
 
 <!-- transição em ondas -->
 <div class="courtsep" aria-hidden="true">
-  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#33313e"/></svg>
-  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#1c1b22"/></svg>
+  <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#145350"/></svg>
+  <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#0c2422"/></svg>
 </div>
 
 <!-- ===== MODELS ===== -->
@@ -594,8 +595,8 @@
   </div>
   <!-- transição em ondas: escuro -> azul do fechamento -->
   <div class="courtsep" aria-hidden="true">
-    <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#3b78c8"/></svg>
-    <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#bd8e5e"/></svg>
+    <svg class="lay2" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#145350"/></svg>
+    <svg class="lay1" viewBox="0 0 1440 92" preserveAspectRatio="none"><path d="M0,46 L90,16 L180,46 L270,76 L360,46 L450,16 L540,46 L630,76 L720,46 L810,16 L900,46 L990,76 L1080,46 L1170,16 L1260,46 L1350,76 L1440,46 L1440,92 L0,92 Z" fill="#ad7a42"/></svg>
   </div>
 </section>
 
@@ -619,7 +620,7 @@
 <footer>
   <div class="wrap row">
     <div class="lg">
-      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="vf" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#21544a"/><stop offset="40%" stop-color="#587a70"/><stop offset="72%" stop-color="#bd8e5e"/><stop offset="100%" stop-color="#a67345"/></linearGradient></defs><g fill="none" stroke="url(#vf)" stroke-linecap="round"><path d="M10 62 Q30 34 50 54 T90 40" stroke-width="9"/><path d="M14 80 Q32 58 50 72 T88 60" stroke-width="7" opacity=".5"/></g><circle cx="90" cy="40" r="6" fill="#21544a"/></svg>
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="vf" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0c2422"/><stop offset="40%" stop-color="#145350"/><stop offset="72%" stop-color="#ad7a42"/><stop offset="100%" stop-color="#8f5f2c"/></linearGradient></defs><g fill="none" stroke="url(#vf)" stroke-linecap="round"><path d="M10 62 Q30 34 50 54 T90 40" stroke-width="9"/><path d="M14 80 Q32 58 50 72 T88 60" stroke-width="7" opacity=".5"/></g><circle cx="90" cy="40" r="6" fill="#0c2422"/></svg>
       <span style="font-family:'Sora',sans-serif;font-weight:700;letter-spacing:.02em;color:var(--ink)">Viva </span>
     </div>
     <small>Movimento, bem-estar e experiência · Goiânia · Documento de trabalho — proposta de parceria</small>
