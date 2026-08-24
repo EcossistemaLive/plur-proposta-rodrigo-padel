@@ -610,29 +610,55 @@
   },{threshold:.16});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  /* hero waves canvas */
+  /* hero padel balls canvas */
   const cv=document.getElementById('waves'),ctx=cv.getContext('2d');
-  let w,h,t=0;
+  let w,h;
   function size(){w=cv.width=cv.offsetWidth;h=cv.height=cv.offsetHeight}
   size();addEventListener('resize',size);
-  const layers=[
-    {a:38,y:.72,s:.010,c:'rgba(40,163,200,.30)',o:0},
-    {a:30,y:.80,s:.014,c:'rgba(46,100,176,.30)',o:1.6},
-    {a:24,y:.88,s:.018,c:'rgba(109,74,167,.32)',o:3.0}
+  const balls = [
+    {x: w?w*0.1:100, y: h?h*0.5:100, vx: 4.5, vy: 3.2, c: '142,198,63', r: 8},
+    {x: w?w*0.8:500, y: h?h*0.2:200, vx: -3.8, vy: 4.5, c: '40,163,200', r: 12},
+    {x: w?w*0.5:300, y: h?h*0.8:300, vx: 5.2, vy: -4.1, c: '109,74,167', r: 6}
   ];
+  const trails = [];
   function draw(){
     ctx.clearRect(0,0,w,h);
-    /* rajada: o "vento" do ventilador intensifica as ondas em pulsos */
-    const gust=1+0.55*(0.5+0.5*Math.sin(t*0.42));
-    layers.forEach(L=>{
-      ctx.beginPath();ctx.moveTo(0,h);
-      for(let x=0;x<=w;x+=8){
-        const y=h*L.y+Math.sin(x*L.s+t+L.o)*L.a*gust+Math.sin(x*L.s*.5+t*.6)*L.a*.4*gust;
-        ctx.lineTo(x,y);
-      }
-      ctx.lineTo(w,h);ctx.closePath();ctx.fillStyle=L.c;ctx.fill();
+    
+    /* abstract court lines */
+    ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(w*0.2, 0); ctx.lineTo(w*0.1, h);
+    ctx.moveTo(w*0.8, 0); ctx.lineTo(w*0.9, h);
+    ctx.moveTo(0, h*0.4); ctx.lineTo(w, h*0.6);
+    ctx.stroke();
+
+    balls.forEach(b => {
+      b.x += b.vx; b.y += b.vy;
+      if(b.x < b.r || b.x > w - b.r) b.vx *= -1;
+      if(b.y < b.r || b.y > h - b.r) b.vy *= -1;
+      
+      trails.push({x: b.x, y: b.y, c: b.c, a: 1, r: b.r});
+      
+      ctx.beginPath();
+      ctx.arc(b.x, b.y, b.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${b.c}, 1)`;
+      ctx.fill();
     });
-    t+=0.018;requestAnimationFrame(draw);
+    
+    for(let i = trails.length - 1; i >= 0; i--){
+      let t = trails[i];
+      t.a -= 0.03;
+      if(t.a <= 0) {
+        trails.splice(i, 1);
+        continue;
+      }
+      ctx.beginPath();
+      ctx.arc(t.x, t.y, t.r * t.a, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${t.c}, ${t.a * 0.5})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(draw);
   }
   draw();
 </script>
